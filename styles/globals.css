@@ -14,3 +14,11 @@ a {
 * {
   box-sizing: border-box;
 }
+
+#big-text{
+  font-size: 4.4rem;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  margin-top: 20px;
+}

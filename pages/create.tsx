@@ -6,13 +6,7 @@ import axios from 'axios';
 
 export default function create() {
 
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-        const res = await axios.post('http://127.0.0.1:8000/api/make-post'
-        ,{
-            
-        });
-      }
+    
 
   return (
       <>
@@ -29,7 +23,7 @@ export default function create() {
                     </h1>
 
                     <div className="container">
-                        <form onSubmit={handleSubmit}>
+                        <form action='http://localhost:8000/api/make-post/' method='POST'>
                             <div className="form-group">
                                 <label htmlFor="title">Title</label>
                                 <input type="text" className="form-control" id="title" name='title' placeholder="Title" />

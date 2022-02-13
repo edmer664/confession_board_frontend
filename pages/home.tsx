@@ -37,7 +37,7 @@ const Home: NextPage = () => {
         <h1 className="px-4 px-lg-3">
           Latest Confessions
         </h1>
-        <div className="d-flex flex-wrap align-items-center">
+        <div className="d-flex flex-wrap align-items-center justify-content-center">
           {loading &&
 
             <div className="d-flex justify-content-center">

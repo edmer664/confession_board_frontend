@@ -19,7 +19,7 @@ const Landing: NextPage = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
       <div
-        className=" text-white "
+        className=" text-white"
         style={{
           backgroundColor: "#f7b42c",
           backgroundImage: `linear-gradient(95deg, #FC7619 0%, #B0581A 99%)`,

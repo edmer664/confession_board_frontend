@@ -40,7 +40,7 @@ const Landing: NextPage = () => {
           // backgroundImage: `linear-gradient(95deg, #FC7619 0%, #B0581A 99%)`,
         }}
       >
-        <div className="container-fluid p-lg-5 p-2 vh-100">
+        <div className="container-fluid p-lg-5 p-2 ">
           <div className="row flex-lg-row-reverse row-cols-lg-2 row-cols-1 justify-content-center align-items-center">
             <div className="col pt-lg-0 pt-5">
               <Image

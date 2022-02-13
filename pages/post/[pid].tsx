@@ -9,9 +9,17 @@ export default function Posts() {
   const router = useRouter();
   const { pid } = router.query;
 
+  interface Post {
+    id: number;
+    title: string;
+    body: string;
+    author: string;
+    date: string;
+  }
+
   console.log(pid);
   const [loading, setLoading] = useState(true);
-  const [post, setPost] = useState({});
+  const [post, setPost] = useState({} as Post);
   console.log(`https://confession-board.herokuapp.com/api/get-post/${pid}/`);
 
   useEffect(() => {

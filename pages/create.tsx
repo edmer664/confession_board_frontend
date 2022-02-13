@@ -17,8 +17,8 @@ export default function create() {
     
         <div>
             <Navbar />
-                <main className='p-5'>
-                    <h1>
+                <main className='p-5 vh-100 container justify-content-center'>
+                    <h1 className="py-4 px-3 fs-1 ">
                         Add new post
                     </h1>
 

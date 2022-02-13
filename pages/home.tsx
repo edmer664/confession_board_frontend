@@ -15,12 +15,14 @@ const Home: NextPage = () => {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
-        'Accept': 'application/json'
+        'Accept': 'application/json',
+      
+
       }
-    }).then((res: { json: () => any; }) => res.json()).then((data: any) => setPosts(data)).finally(
+    }).then((res: { json: () => any; }) => res.json()).then((data: any) => setPosts(data)).catch((err: any) => setLoading(false)).finally(
       () => setLoading(false)
     );
-  })
+  },[])
 
 
   return (
@@ -31,11 +33,11 @@ const Home: NextPage = () => {
       </Head>
       <Navbar />
 
-      <main className="p-5">
-        <h1>
+      <main className="p-lg-5 p-1">
+        <h1 className="px-4 px-lg-3">
           Latest Confessions
         </h1>
-        <div className="d-flex flex-wrap">
+        <div className="d-flex flex-wrap align-items-center">
           {loading &&
 
             <div className="d-flex justify-content-center">
@@ -59,7 +61,7 @@ const Home: NextPage = () => {
                       author={post.author}
                       date={post.pub_date}
                     />
-                    
+
                   </div>
                 )
               }

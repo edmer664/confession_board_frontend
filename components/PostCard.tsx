@@ -6,9 +6,11 @@ export default function PostCard(props: any) {
   return (
     <div className="card" style={{width:'20rem', height:'25rem'}}>
       <div className="card-header">
+          <a href={`/post/${props.id}`} className="text-decoration-none text-dark">
           <h2>
               {props.title}
           </h2>
+          </a>
       </div>
         <div className="card-body">
             <p>{props.content.substring(0, 300)}

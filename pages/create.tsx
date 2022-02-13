@@ -17,7 +17,7 @@ export default function create() {
     
         <div>
             <Navbar />
-                <main className='p-3'>
+                <main className='p-5'>
                     <h1>
                         Add new post
                     </h1>

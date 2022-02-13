@@ -20,13 +20,14 @@ const Landing: NextPage = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
       <div
-        className=" text-white"
+        className=" text-dark"
         style={{
-          backgroundColor: "#f7b42c",
-          backgroundImage: `linear-gradient(95deg, #FC7619 0%, #B0581A 99%)`,
+          // backgroundColor: "#f7b42c",
+
+          // backgroundImage: `linear-gradient(95deg, #FC7619 0%, #B0581A 99%)`,
         }}
       >
-        <div className="container-fluid p-lg-5 p-2">
+        <div className="container-fluid p-lg-5 p-2 vh-100">
           <div className="row flex-lg-row-reverse row-cols-lg-2 row-cols-1 justify-content-center align-items-center">
             <div className="col pt-lg-0 pt-5">
               <Image
@@ -38,7 +39,7 @@ const Landing: NextPage = () => {
               />
             </div>
             <div className="col pe-3">
-              <h1 id="big-text" className="fw-bold text-center text-lg-start py-4">
+              <h1 id="big-text" className="text-dark fw-bold text-center text-lg-start py-4">
                 Confession Board
               </h1>
               

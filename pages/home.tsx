@@ -52,7 +52,7 @@ const Home: NextPage = () => {
             posts && posts.map(
               (post: any) => {
                 return (
-                  <div className="p-4">
+                  <div key={post.id} className="p-4">
 
                     <PostCard
                       id={post.id}

@@ -1,5 +1,7 @@
 import React, { useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Link from "next/link";
+
 
 export default function Navbar(props:any) {
   useEffect(() => {
@@ -12,9 +14,11 @@ export default function Navbar(props:any) {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container-fluid">
-        <a className="navbar-brand" href="/">
-          Confession Board
-        </a>
+        <Link href='/'>
+          <a className="navbar-brand" >
+            Confession Board
+          </a>
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -29,14 +33,18 @@ export default function Navbar(props:any) {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a className="nav-link" aria-current="page" href="/home">
-                Home
-              </a>
+              <Link href="/home">
+                <a className="nav-link" aria-current="page" >
+                  Home
+                </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="create">
-                Make Post
-              </a>
+              <Link href="create">
+                <a className="nav-link" >
+                  Make Post
+                </a>
+              </Link>
             </li>
           </ul>
         </div>

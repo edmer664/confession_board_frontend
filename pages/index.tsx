@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Link from "next/link";
 
 import Head from "next/head";
 import Image from "next/image";
@@ -51,19 +52,23 @@ const Landing: NextPage = () => {
               </p>
               
               <p className="fw-normal text-center text-lg-start">
-                "I am a person who is not afraid to speak my mind. I am a person
-                who is not afraid to be myself." -{" "}
+                &ldquo;I am a person who is not afraid to speak my mind. I am a person
+                who is not afraid to be myself.&rdquo; -{" "}
                 <span className="fst-italic"> Anonymous </span>
               </p>
               <div className="d-flex flex-column flex-lg-row">
-                <a href="/create" className="btn btn-primary m-2 px-5 py-3">
-                  {" "}
-                  Create Confession{" "}
-                </a>
-                <a href="/home" className="btn btn-outline-dark m-2 px-5 py-3">
-                  {" "}
-                  Read Confessions{" "}
-                </a>
+                <Link href="/create">
+                  <a  className="btn btn-primary m-2 px-5 py-3">
+                    {" "}
+                    Create Confession{" "}
+                  </a>
+                </Link>
+                <Link href="/home">
+                  <a className="btn btn-outline-dark m-2 px-5 py-3">
+                    {" "}
+                    Read Confessions{" "}
+                  </a>
+                </Link>
               </div>
             </div>
           </div>

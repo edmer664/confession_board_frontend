@@ -11,7 +11,7 @@ const Home: NextPage = () => {
   const [posts, setPosts] = React.useState([]);
   const [loading, setLoading] = React.useState(true);
   useEffect(() => {
-    fetch(`http://localhost:8000/api/get-posts/`, {
+    fetch(`https://confession-board.herokuapp.com/api/get-posts/`, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',

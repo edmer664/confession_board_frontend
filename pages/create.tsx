@@ -23,7 +23,7 @@ export default function create() {
                     </h1>
 
                     <div className="container">
-                        <form action='http://localhost:8000/api/make-post/' method='POST'>
+                        <form action='https://confession-board.herokuapp.com/api/make-post/' method='POST'>
                             <div className="form-group">
                                 <label htmlFor="title">Title</label>
                                 <input type="text" className="form-control" id="title" name='title' placeholder="Title" />

@@ -62,18 +62,20 @@ export default function Posts() {
             <div className="row">
               <div className="col-md-12">
                 <div className="card">
-                  <div className="card-body">
+                  <div className="card-header">
                     <h3 className="card-title">{post.title}</h3>
-                    <p className="card-text">{post.body}</p>
-                    <div className="card-footer">
-                      <small className="text-muted">
-                        Posted by{" "}
-                        <span className="fw-bold">
-                          {post.author ? post.author : "Anonymous"}
-                        </span>{" "}
-                        on {new Date(post.date).toDateString()}
-                      </small>
-                    </div>
+                  </div>
+                  <div className="card-body">
+                    <p className="card-text ">{post.body}</p>
+                  </div>
+                  <div className="card-footer">
+                    <small className="text-muted">
+                      Posted by{" "}
+                      <span className="fw-bold">
+                        {post.author ? post.author : "Anonymous"}
+                      </span>{" "}
+                      on {new Date(post.date).toDateString()}
+                    </small>
                   </div>
                 </div>
               </div>

@@ -87,8 +87,8 @@ const Landing: NextPage = () => {
             </div>
           </div>
         </div>
-        <Footer />
       </div>
+        <Footer />
     </>
   );
 };

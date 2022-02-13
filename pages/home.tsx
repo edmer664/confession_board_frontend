@@ -40,7 +40,7 @@ const Home: NextPage = () => {
         <div className="d-flex flex-wrap align-items-center justify-content-center">
           {loading &&
 
-            <div className="d-flex justify-content-center">
+            <div className="d-flex justify-content-center vh-100">
               <div className="spinner-border" role="status">
                 <span className="sr-only"></span>
               </div>

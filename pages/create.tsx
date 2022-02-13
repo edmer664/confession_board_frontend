@@ -3,6 +3,7 @@ import Head from "next/head";
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import axios from 'axios';
+import Script from 'next/script';
 
 export default function create() {
 
@@ -14,7 +15,18 @@ export default function create() {
         <title>Make Confessions</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
-    
+      <Script
+        id='gtag'
+          strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=G-ZMWNHB2NXY"
+        ></Script>
+        <Script id="gtag2">
+          {`window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-ZMWNHB2NXY');`}
+        </Script>
         <div>
             <Navbar />
                 <main className='p-5 vh-100 container justify-content-center'>

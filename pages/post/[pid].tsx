@@ -4,6 +4,7 @@ import { useRouter } from "next/router";
 import Head from "next/head";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
+import Script from "next/script";
 
 export default function Posts() {
   const router = useRouter();
@@ -46,6 +47,18 @@ export default function Posts() {
         <title>Confession</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
+      <Script
+        id='gtag'
+          strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=G-ZMWNHB2NXY"
+        ></Script>
+        <Script id="gtag2">
+          {`window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-ZMWNHB2NXY');`}
+        </Script>
       <Navbar />
 
       <main>

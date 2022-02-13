@@ -6,6 +6,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Footer from "../components/Footer";
 import { useEffect } from "react";
+import Script from "next/script";
 
 const Landing: NextPage = () => {
   useEffect(() => {
@@ -19,6 +20,18 @@ const Landing: NextPage = () => {
         <title>Confession Board</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
+      <Script
+        id='gtag'
+          strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=G-ZMWNHB2NXY"
+        ></Script>
+        <Script id="gtag2">
+          {`window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-ZMWNHB2NXY');`}
+        </Script>
       <div
         className=" text-dark"
         style={{
